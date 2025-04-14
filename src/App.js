@@ -1,13 +1,19 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Navbar from './components/Navbar';
+import Projects from './pages/Projects';
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <Navbar />
-      <h1>Hello, I’m Ansh 👋</h1>
-      <p>Welcome to my personal website built with React.</p>
-    </div>
+      <div className="App">
+        <Routes>
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
