@@ -17,13 +17,12 @@ function Projects() {
   return (
     <div style={{ padding: '2rem' }}>
       <h1>My Projects</h1>
-      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-        {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
-        ))}
-      </div>
+      {projects.map((project, index) => (
+        <ProjectCard key={index} {...project} />
+      ))}
     </div>
   );
+  
 }
 
 export default Projects;
