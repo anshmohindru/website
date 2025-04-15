@@ -5,19 +5,12 @@ import Navbar from './components/Navbar';
 import Projects from './pages/Projects';
 import About from './pages/About';
 import Contact from './pages/Contact';
-
-function Home() {
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-zinc-900 via-neutral-800 to-black text-white">
-      <h1 className="text-5xl font-bold">Hey, I’m Ansh 👋</h1>
-    </div>
-  );
-}
+import Home from './pages/Home';
 
 function App() {
   return (
     <Router>
-      <div className="bg-zinc-950 min-h-screen text-white">
+      <div className="bg-gradient-to-br from-zinc-900 via-neutral-800 to-black min-h-screen text-white font-futuristic">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
