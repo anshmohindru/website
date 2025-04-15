@@ -4,12 +4,12 @@ function Projects() {
   const projects = [
     {
       title: 'Portfolio Website',
-      description: 'This very site! Built with React and deployed on Vercel.',
+      description: 'This site! Built with React and deployed on Vercel.',
       link: 'https://github.com/anshmohindru/website',
     },
     {
-      title: 'Nothing',
-      description: 'Nothing',
+      title: 'Coming soon',
+      description: 'Stay tuned',
       link: 'https://nfl.com',
     },
   ];
