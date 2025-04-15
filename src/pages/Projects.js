@@ -5,12 +5,12 @@ function Projects() {
     {
       title: 'Portfolio Website',
       description: 'This very site! Built with React and deployed on Vercel.',
-      link: 'https://anshmohindru.vercel.app',
+      link: 'https://github.com/anshmohindru/website',
     },
     {
-      title: 'Hashrunner (FTC Robot Code Framework)',
-      description: 'Open-source robot coding system using HashMaps.',
-      link: 'https://github.com/anshmohindru/hashrunner',
+      title: 'Nothing',
+      description: 'Nothing',
+      link: 'https://nfl.com',
     },
   ];
 
