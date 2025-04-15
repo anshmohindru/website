@@ -2,11 +2,13 @@ import './index.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+
+import Home from './pages/Home';
 import Projects from './pages/Projects';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Home from './pages/Home';
-import Footer from './components/Footer';
+import Skills from './pages/Skills';
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/skills" element={<Skills />} />
           </Routes>
         </div>
 

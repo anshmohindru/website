@@ -19,6 +19,14 @@ function Navbar() {
           </li>
           <li>
             <Link
+              to="/skills"
+              className="hover:text-cyan-400 transition duration-300 hover:drop-shadow-[0_0_5px_cyan]"
+            >
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link
               to="/about"
               className="hover:text-cyan-400 transition duration-300 hover:drop-shadow-[0_0_5px_cyan]"
             >

@@ -6,7 +6,7 @@ function Projects() {
     {
       title: "Portfolio Website",
       description: "This site! Built with React and deployed on Vercel.",
-      link: "https://anshmohindru.vercel.app",
+      link: "https://github.com/anshmohindru/website",
     },
     {
       title: "Coming Soon",
