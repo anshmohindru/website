@@ -10,10 +10,10 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <Router>
-      <div className="bg-gradient-to-br from-zinc-900 via-neutral-800 to-black min-h-screen text-white font-futuristic flex flex-col">
+    <div className="flex flex-col min-h-screen bg-gradient-to-br from-zinc-900 via-neutral-800 to-black text-white font-futuristic">
+      <Router>
         <Navbar />
-        
+
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -24,8 +24,8 @@ function App() {
         </div>
 
         <Footer />
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 
