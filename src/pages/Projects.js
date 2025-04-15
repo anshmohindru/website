@@ -1,4 +1,5 @@
 import ProjectCard from "../components/ProjectCard";
+import { motion } from "framer-motion";
 
 function Projects() {
   const projects = [
@@ -8,21 +9,29 @@ function Projects() {
       link: "https://anshmohindru.vercel.app",
     },
     {
-      title: "Coming soon",
-      description: "Stay tuned",
+      title: "Coming Soon",
+      description: "Stay tuned for more projects!",
       link: "https://nfl.com",
     },
   ];
 
   return (
-    <div className="min-h-screen px-8 py-12 bg-gradient-to-br from-black via-zinc-900 to-neutral-950 text-white">
-      <h1 className="text-4xl font-bold mb-10 text-cyan-400">My Projects</h1>
-      <div className="grid md:grid-cols-2 gap-6">
+    <motion.div
+      className="min-h-screen px-6 py-16 bg-gradient-to-br from-black via-zinc-900 to-neutral-950 text-white"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+    >
+      <h1 className="text-4xl md:text-5xl font-bold mb-10 text-center bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+        My Projects
+      </h1>
+
+      <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
