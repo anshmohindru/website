@@ -4,7 +4,7 @@ import { FaEnvelope, FaLinkedin, FaGithub, FaDiscord } from "react-icons/fa";
 function Contact() {
   return (
     <motion.div
-      className="min-h-screen px-6 py-20 text-black dark:text-white bg-gradient-to-br from-white via-gray-100 to-gray-200 dark:from-black dark:via-zinc-900 dark:to-neutral-950 transition-colors duration-500"
+      className="min-h-screen px-6 py-20 transition-colors duration-500 text-black dark:text-white bg-gradient-to-br from-white via-gray-100 to-gray-200 dark:from-black dark:via-zinc-900 dark:to-neutral-950"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
