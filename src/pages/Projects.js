@@ -17,7 +17,7 @@ function Projects() {
 
   return (
     <motion.div
-      className="min-h-screen px-6 py-16 bg-gradient-to-br from-black via-zinc-900 to-neutral-950 text-white"
+      className="min-h-screen px-6 py-16 bg-gradient-to-br from-white via-gray-100 to-gray-200 text-black dark:from-black dark:via-zinc-900 dark:to-neutral-950 dark:text-white transition-colors duration-500"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}

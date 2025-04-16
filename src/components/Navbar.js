@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ThemeToggle from './ThemeToggle';
 
 function Navbar() {
   return (
@@ -8,40 +9,15 @@ function Navbar() {
           Ansh
         </Link>
 
-        <ul className="flex gap-6 text-sm md:text-base font-medium">
-          <li>
-            <Link
-              to="/projects"
-              className="hover:text-cyan-400 transition duration-300 hover:drop-shadow-[0_0_5px_cyan]"
-            >
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/skills"
-              className="hover:text-cyan-400 transition duration-300 hover:drop-shadow-[0_0_5px_cyan]"
-            >
-              Skills
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/about"
-              className="hover:text-cyan-400 transition duration-300 hover:drop-shadow-[0_0_5px_cyan]"
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/contact"
-              className="hover:text-cyan-400 transition duration-300 hover:drop-shadow-[0_0_5px_cyan]"
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
+        <div className="flex items-center gap-6">
+          <ul className="flex gap-6 text-sm md:text-base font-medium">
+            <li><Link to="/projects" className="hover:text-cyan-400 transition">Projects</Link></li>
+            <li><Link to="/skills" className="hover:text-cyan-400 transition">Skills</Link></li>
+            <li><Link to="/about" className="hover:text-cyan-400 transition">About</Link></li>
+            <li><Link to="/contact" className="hover:text-cyan-400 transition">Contact</Link></li>
+          </ul>
+          <ThemeToggle />
+        </div>
       </div>
     </nav>
   );

@@ -12,10 +12,9 @@ import Skills from './pages/Skills';
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-br from-zinc-900 via-neutral-800 to-black text-white font-futuristic">
+    <div className="flex flex-col min-h-screen transition-colors duration-500 bg-white text-black dark:bg-black dark:text-white font-futuristic">
       <Router>
         <Navbar />
-
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -25,7 +24,6 @@ function App() {
             <Route path="/skills" element={<Skills />} />
           </Routes>
         </div>
-
         <Footer />
       </Router>
     </div>

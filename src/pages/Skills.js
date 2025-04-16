@@ -60,7 +60,7 @@ import {
   
   function Skills() {
     return (
-      <div className="min-h-screen px-6 py-20 text-white bg-gradient-to-br from-black via-zinc-900 to-neutral-950">
+      <div className="min-h-screen px-6 py-20 text-black dark:text-white bg-gradient-to-br from-white via-gray-100 to-gray-200 dark:from-black dark:via-zinc-900 dark:to-neutral-950 transition-colors duration-500">
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 text-transparent bg-clip-text">
           My Skills
         </h1>
@@ -68,15 +68,21 @@ import {
         <div className="max-w-6xl mx-auto space-y-16">
           {skills.map((section, idx) => (
             <div key={idx}>
-              <h2 className="text-2xl font-semibold mb-6 text-cyan-400">{section.category}</h2>
+              <h2 className="text-2xl font-semibold mb-6 text-cyan-500 dark:text-cyan-400">
+                {section.category}
+              </h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
                 {section.items.map((item, i) => (
                   <div
                     key={i}
-                    className="flex flex-col items-center justify-center bg-zinc-800 rounded-lg p-6 shadow-md hover:shadow-cyan-500/30 transition duration-300"
+                    className="flex flex-col items-center justify-center bg-gray-200 dark:bg-zinc-800 rounded-lg p-6 shadow-md hover:shadow-cyan-500/30 transition duration-300"
                   >
-                    <div className="text-4xl text-cyan-400 mb-2">{item.icon}</div>
-                    <div className="text-sm text-gray-300">{item.label}</div>
+                    <div className="text-4xl text-cyan-500 dark:text-cyan-400 mb-2">
+                      {item.icon}
+                    </div>
+                    <div className="text-sm text-gray-700 dark:text-gray-300">
+                      {item.label}
+                    </div>
                   </div>
                 ))}
               </div>
